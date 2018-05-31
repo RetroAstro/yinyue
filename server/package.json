@@ -1,0 +1,14 @@
+{
+  "dependencies": {
+    "axios": "^0.18.0",
+    "koa": "^2.5.1",
+    "koa-bodyparser": "^4.2.0",
+    "koa-router": "^7.4.0",
+    "koa-static": "^4.0.3",
+    "koa-views": "^6.1.4",
+    "nunjucks": "^3.1.2"
+  },
+  "scripts": {
+    "start": "supervisor app.js"
+  }
+}

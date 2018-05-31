@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, minimum-scale=1, user-scalable=no">
+<meta name="format-detection" content="telephone=no">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="apple-mobile-web-app-title" content="音悦">
+<link rel="apple-touch-icon" href="/img/music.png">
+<link rel="manifest" href="/manifest.json">
+<link rel="stylesheet" href="/css/index.css">
+<title>音悦</title>
+</head>
+<body>
+    <div class="container">
+        <section>
+            <div class="page-search">
+                <header>
+                    <input type="text" class="search_input" placeholder="搜索音乐 、歌手" maxlength="16">
+                </header>
+                <main>
+                    <ul class="list-wrap">
+                    </ul>
+                    <div class="logo"></div>
+                </main>               
+            </div>
+            <div class="page-singer">
+                <div class="singer-bg">
+                    <div class="page-singer-wrap">
+                        <span class="row"> </span>
+                        <span class="page-singer-name"></span>
+                        <span class="row"> </span>
+                    </div>
+                    <div class="singer-back"><i></i></div>
+                </div>
+                <div class="singer-songs-wrap">
+                    <ul>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class="foo">
+                <div class="foo-left">
+                        <div class="song-pic">
+                            <i></i>
+                        </div>
+                        <div class="song-info">
+                            <p class="song-name">肆无忌惮</p>
+                            <p class="singer">薛之谦</p>
+                        </div>
+                </div>
+                <div class="foo-right">
+                    <div class="player-btn">
+                        <div class="circle">
+                            <div class="circle-left">
+                                <div class="clip-left"></div>
+                            </div>
+                            <div class="circle-right">
+                                <div class="clip-right"></div>
+                            </div>
+                            <div class="mask-white">
+                                <i class="btn"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="songlist-btn">
+                        <i class="list-icon"></i>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <div class="mask-blur">
+            <div class="ui">
+                <div class="player-info show">
+                    <div class="p-name">肆无忌惮</div>
+                    <div class="p-singer"><i></i> &nbsp;<span>薛之谦</span>&nbsp; <i></i></div>
+                </div>
+                <div class="song-circle">
+                    <div class="scale-wrap">
+                        <span class="circle-pic"><i></i></span>
+                    </div>
+                </div>
+            </div>
+            <div class="player-fuc">
+                <audio title="肆无忌惮" src="https://dl.stream.qqmusic.qq.com/C100000QCwge3B6Ad1.m4a?fromtag=38" class="audio" mid="000QCwge3B6Ad1"></audio>
+                <div class="music-progress">
+                    <div class="music-wrap">
+                        <span class="present">00:00</span>
+                        <div class="progress-tracker">
+                            <div class="progress-handler"></div>
+                            <div class="progress-bar"></div>
+                        </div>
+                        <span class="total"></span>
+                    </div>
+                </div>
+                <div class="music-buttons">
+                    <div class="icons">
+                        <i></i>
+                        <i class="prev"></i>
+                        <i></i>
+                        <i class="next"></i>
+                        <i class="list"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="blur-back">
+                <i></i>
+            </div>
+        </div>
+        <div class="music-list">
+            <ul class="self-wrap">
+                <li class="self-song active">
+                    <div class="song-info" song_mid="000QCwge3B6Ad1">
+                        <span class="song-name">肆无忌惮</span>
+                        <span class="singer">- <span> 薛之谦</span></span>
+                        <div class="beat">
+                            <span class="one"></span>
+                            <span class="two"></span>
+                            <span class="three"></span>
+                        </div>
+                    </div>
+                    <div class="close-icon">
+                        <i></i>
+                    </div>
+                </li>
+                <li class="self-song">
+                    <div class="song-info" song_mid="003TfyNp47dm7E">
+                        <span class="song-name">哑巴</span>
+                        <span class="singer">- <span> 薛之谦</span></span>
+                        <div class="beat">
+                            <span class="one"></span>
+                            <span class="two"></span>
+                            <span class="three"></span>
+                        </div>
+                    </div>
+                    <div class="close-icon">
+                        <i></i>
+                    </div>
+                </li>
+            </ul>
+            <div class="close">关闭</div>
+        </div>
+        <div class="add-music">
+            <div class="song-name">
+                肆无忌惮
+            </div>
+            <div class="selection">
+                <div class="play_now">
+                </div>
+                <div class="add_list">
+                    <i></i>
+                </div>
+            </div>
+            <div class="cancel"><span>取消</span></div>
+        </div>
+        <div class="mask-grey"></div>
+        <div class="warning">
+        </div>
+    </div>
+</body>
+<script src="/js/tool.js"></script>
+<script src="/js/index.js"></script>
+</html>

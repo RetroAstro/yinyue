@@ -1,0 +1,39 @@
+{
+    "name": "音悦",
+    "short_name": "音悦",
+    "start_url": "https://retroastro.mynatapp.cc",
+    "display": "standalone",
+    "background_color": "#b2dedd",
+    "description": "音悦 ~ 一款PWA版的在线音乐播放器",
+    "orientation": "portrait-primary",
+    "theme_color": "#b2dedd",
+    "icons": [{
+        "src": "img/music.png",
+        "sizes": "32x32",
+        "type": "image/png"
+    }, {
+        "src": "img/music.png",
+        "sizes": "72x72",
+        "type": "image/png"
+    }, {
+        "src": "img/music.png",
+        "sizes": "128x128",
+        "type": "image/png"
+    }, {
+        "src": "img/music.png",
+        "sizes": "144x144",
+        "type": "image/png"
+    }, {
+        "src": "img/music.png",
+        "sizes": "192x192",
+        "type": "image/png"
+    }, {
+        "src": "img/music.png",
+        "sizes": "256x256",
+        "type": "image/png"
+    }, {
+        "src": "img/music.png",
+        "sizes": "512x512",
+        "type": "image/png"
+    }]
+}
