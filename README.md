@@ -3,10 +3,12 @@
 ````
 
 # install dependencies
-npm install
+
+$ npm install
 
 # run server
-npm start
+
+$ npm start
 
 ````
 
