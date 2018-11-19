@@ -16,7 +16,7 @@ npm start
 
 ##### 技术栈
 
-* 原生JavaScript
+* 原生 JavaScript
 * CSS (3) 、Sass
 * Koa2 、axios
 * PWA：Manifest、Service Worker 、cacheStorage
@@ -43,6 +43,6 @@ npm start
 
 PWA 部分: 
 
-* 基于 Manifest, 实现应用可添加到桌面等功能, 自己用的是 IOS 系统, 而苹果好像暂时不支持 manifest，但有兼容的解决办法。
+* 基于 Manifest, 实现应用可添加到桌面等功能, 自己用的是 IOS 系统, 而苹果好像暂时不支持 `manifest.json`, 但有兼容的解决办法。
 * 基于 Service Worker, 实现静态资源的预缓存, 拦截请求并对其进行处理, 比如图片和音乐可以通过拦截然后进行缓存, 这样在离线的情况下仍能够播放音乐, 可惜的是自己尝试了多次还是有问题, 总感觉是 IOS 11.3.1 上的 bug ... 因为自己在谷歌浏览器上尝试的时候离线时音乐是可以播放的。所以最终的决定是不缓存音乐。
-* 基于 cacheStorage, 它是与 Service Worker 一起使用的一个 API，但与 localStorage 和 SessionStorage 不同, 因为当用户退出页面后, 放在它里面的缓存数据仍然有效。利用这个特性我实现了保存用户歌单的简单功能, 意思是每次用户退出然后再次进入时, 歌单里面的歌曲仍然存在而不会初始化, 当前显示的歌曲仍和用户退出时显示的歌曲一致。
+* 基于 cacheStorage, 它是与 Service Worker 一起使用的一个 API，但与 localStorage 和 sessionStorage 不同, 因为当用户退出页面后, 放在它里面的缓存数据仍然有效。利用这个特性我实现了保存用户歌单的简单功能, 意思是每次用户退出然后再次进入时, 歌单里面的歌曲仍然存在而不会初始化, 当前显示的歌曲仍和用户退出时显示的歌曲一致。
