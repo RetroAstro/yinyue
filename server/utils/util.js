@@ -25,9 +25,9 @@ class TransferStation {
     // 分发获取的任务
     get_receive_mission(me) {
         return {
-            'search': data => { me.data.keyword.push(Object.keys(data)[0]) },
-            'getMusicInfo': data => { me.data.song_mid.push(Object.keys(data)[0]) },
-            'getSingerSongs': data => { me.data.singer_mid.push(Object.keys(data)[0]) }
+            'search': data => me.data.keyword.push(Object.keys(data)[0]),
+            'getMusicInfo': data => me.data.song_mid.push(Object.keys(data)[0]),
+            'getSingerSongs': data => me.data.singer_mid.push(Object.keys(data)[0])
         }
     }
     // 分配发送的任务
