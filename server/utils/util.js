@@ -33,9 +33,9 @@ class TransferStation {
     // 分配发送的任务
     get_fetch_mission(me) {
         return {
-            'search': () => { return JSON.parse(me.data.keyword[0]).keyword },
-            'getMusicInfo': () => { return JSON.parse(me.data.song_mid[0]).song_mid },
-            'getSingerSongs': () => { return JSON.parse(me.data.singer_mid[0]).singer_mid }
+            'search': () => JSON.parse(me.data.keyword[0]).keyword,
+            'getMusicInfo': () => JSON.parse(me.data.song_mid[0]).song_mid,
+            'getSingerSongs': () => JSON.parse(me.data.singer_mid[0]).singer_mid
         }
     }
 }
