@@ -2,11 +2,11 @@
 ##### 使用
 ````
 
-# install dependencies
-npm install
+$ cd ./server
 
-# run server
-npm start
+$ npm install 
+
+$ npm run start
 
 ````
 

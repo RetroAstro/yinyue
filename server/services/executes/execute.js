@@ -1,3 +1,4 @@
+const axios = require('axios')
 
 // 处理请求的数据并返回必要的数据
 module.exports = {
@@ -7,7 +8,7 @@ module.exports = {
                 fail: 'no data'
             }
         }
-        if ( opts.data.singer ) {
+        if (opts.data.singer.count) {
             var singer_list = opts.data.singer.itemlist;
             var list = [];
             for (var singer of singer_list) {
@@ -34,17 +35,19 @@ module.exports = {
     'getMusicInfo': opts => {
         var data = JSON.parse(opts.slice(1, opts.length-1));
         var mid = data.data[0].mid;
-        var url = Object.values(data.url)[0];
         var albumId = data.data[0].album.mid;
         var name = data.data[0].name;
         var singer = data.data[0].singer[0].name;
-        return {
-            mid: mid,
-            pic: `https://y.gtimg.cn/music/photo_new/T002R300x300M000${albumId}.jpg?max_age=2592000`,
-            name: name,
-            singer: singer,
-            url: `https://dl.${url.slice(3)}`
-        }
+        return (async () => {
+            var res = await axios.get(`https://music.niubishanshan.top/api/music/songUrllist/${mid}`)
+            return {
+                mid: mid,
+                pic: `https://y.gtimg.cn/music/photo_new/T002R300x300M000${albumId}.jpg?max_age=2592000`,
+                name: name,
+                singer: singer,
+                url: res.data.data[0]
+            }
+        })()
     },
     'getSingerSongs': opts => {
         var data = JSON.parse(opts.slice(31, opts.length-1));

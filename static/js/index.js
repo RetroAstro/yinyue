@@ -197,14 +197,14 @@ class MusicPool {
                 pic: 'https://y.gtimg.cn/music/photo_new/T002R300x300M000002GH0pj1uSvV9.jpg?max_age=2592000',
                 name: '肆无忌惮',
                 singer: '薛之谦',
-                url: 'https://dl.stream.qqmusic.qq.com/C100000QCwge3B6Ad1.m4a?fromtag=38'
+                url: 'http://isure.stream.qqmusic.qq.com//C400000QCwge3B6Ad1.m4a?guid=5579254314&vkey=70CB3AB574B79D34F103AC471E91FA2F2AEA185E688AAA4B914E8E69D70F4A3E7EA0CEC26A2775FD047E36B13D62D870124579F902F60346&uin=0&fromtag=38'
             },
             {
                 mid: '003TfyNp47dm7E',
                 pic: 'https://y.gtimg.cn/music/photo_new/T002R300x300M000000JOrf02Iy29a.jpg?max_age=2592000',
                 name: '哑巴',
                 singer: '薛之谦',
-                url: 'https://dl.stream.qqmusic.qq.com/C100003TfyNp47dm7E.m4a?fromtag=38'
+                url: 'http://isure.stream.qqmusic.qq.com//C400003TfyNp47dm7E.m4a?guid=5579254314&vkey=72F7E1B8D27BF25CD35D03DE200DCB2FEDA68F04B8A5E2164C07C5749A3133EAA1146CF67E4A098AB5872196EEDEA5F2F9B8A38A90F9E189&uin=0&fromtag=38'
             }
         ];
     }
