@@ -41,7 +41,6 @@ module.exports = {
         return (async () => {
             var res = await axios.get(`https://music.niubishanshan.top/api/music/songUrllist/${mid}`);
             var url = 'https:' + res.data.data[0].split(':')[1];
-            console.log(url)
             return {
                 mid: mid,
                 pic: `https://y.gtimg.cn/music/photo_new/T002R300x300M000${albumId}.jpg?max_age=2592000`,
