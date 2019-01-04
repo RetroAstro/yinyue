@@ -193,18 +193,11 @@ class MusicPool {
     constructor() {
         this.musicList = [
             {
-                mid: '000QCwge3B6Ad1',
-                pic: 'https://y.gtimg.cn/music/photo_new/T002R300x300M000002GH0pj1uSvV9.jpg?max_age=2592000',
-                name: '肆无忌惮',
-                singer: '薛之谦',
-                url: 'https://isure.stream.qqmusic.qq.com//C400000QCwge3B6Ad1.m4a?guid=5579254314&vkey=70CB3AB574B79D34F103AC471E91FA2F2AEA185E688AAA4B914E8E69D70F4A3E7EA0CEC26A2775FD047E36B13D62D870124579F902F60346&uin=0&fromtag=38'
-            },
-            {
-                mid: '003TfyNp47dm7E',
-                pic: 'https://y.gtimg.cn/music/photo_new/T002R300x300M000000JOrf02Iy29a.jpg?max_age=2592000',
-                name: '哑巴',
-                singer: '薛之谦',
-                url: 'https://isure.stream.qqmusic.qq.com//C400003TfyNp47dm7E.m4a?guid=5579254314&vkey=72F7E1B8D27BF25CD35D03DE200DCB2FEDA68F04B8A5E2164C07C5749A3133EAA1146CF67E4A098AB5872196EEDEA5F2F9B8A38A90F9E189&uin=0&fromtag=38'
+                mid: '001r8VMR24xJHa',
+                pic: 'https://y.gtimg.cn/music/photo_new/T002R300x300M000003EHcB24J8t9Z.jpg?max_age=2592000',
+                name: '心墙',
+                singer: '郭静',
+                url: 'http://fs.w.kugou.com/201901041404/b64b77c02e40950fe580d86684d919ad/G010/M05/14/10/qoYBAFUDVW6ASWXaADd0BXaniyc432.mp3'
             }
         ];
     }
