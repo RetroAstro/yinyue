@@ -197,7 +197,7 @@ class MusicPool {
                 pic: 'https://y.gtimg.cn/music/photo_new/T002R300x300M000003EHcB24J8t9Z.jpg?max_age=2592000',
                 name: '心墙',
                 singer: '郭静',
-                url: 'http://fs.w.kugou.com/201901041404/b64b77c02e40950fe580d86684d919ad/G010/M05/14/10/qoYBAFUDVW6ASWXaADd0BXaniyc432.mp3'
+                url: '/xinqiang.mp3'
             }
         ];
     }
