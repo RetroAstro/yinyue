@@ -193,11 +193,11 @@ class MusicPool {
     constructor() {
         this.musicList = [
             {
-                mid: '001r8VMR24xJHa',
-                pic: 'https://y.gtimg.cn/music/photo_new/T002R300x300M000003EHcB24J8t9Z.jpg?max_age=2592000',
-                name: '心墙',
-                singer: '郭静',
-                url: '/xinqiang.mp3'
+                mid: '002I0bOa4CT9Qc',
+                pic: 'https://p2.music.126.net/O0kJwOEhpHfFo5V4mQVrPg==/109951163278435685.jpg',
+                name: '第三人称',
+                singer: '戚薇',
+                url: 'https://m10.music.126.net/20190106000739/e041d8cfffabfe8ab36efd00af62a3d9/ymusic/0f5f/510f/0e0e/8521958bb7fed5782f659d9d62e0a93c.mp3'
             }
         ];
     }
@@ -400,7 +400,7 @@ function deleteMusic(e) {
         var li = findParent(e.target, 'self-song');
         var key = li.querySelector('.song-info').getAttribute('song_mid');
         var mid_now = player.getAttribute('mid');
-        if ( key == '000QCwge3B6Ad1' ) {
+        if ( key == '001r8VMR24xJHa' ) {
             warning.textContent = '默认歌曲不能删除哦^_^';
             warning.classList.add('on');
             setTimeout(() => { warning.classList.remove('on') }, 2000);
@@ -658,7 +658,7 @@ if ( 'serviceWorker' in navigator ) {
 }
 
 // 一但歌单有变化就将其存储到cacheStorage
-function saveMusicListToCache(mid) {
+function saveMusicListToCache() {
     var cache_list = 'music_list';
     var musicList = pool.getMusicList();
     var data = JSON.stringify(musicList);
@@ -704,7 +704,9 @@ function getMusicListFromCache() {
         return Promise.resolve();
     }
 }
-getMusicListFromCache().then( response => {
+
+getMusicListFromCache()
+.then( response => {
     var [musicList, song_mid] = response;
     if ( !musicList || !song_mid ) {
         return;
