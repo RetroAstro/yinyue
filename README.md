@@ -1,5 +1,7 @@
 > #### 音悦 ~ 一款 PWA 版的在线音乐 APP
-##### 使用
+
+**使用**
+
 ````
 $ cd ./server
 
@@ -12,14 +14,14 @@ $ npm run start
 
 ##### 项目演示地址：[音悦 ~ Version Of Progressive Web App](https://cosmos-alien.com:443)
 
-##### 技术栈
+**技术栈**
 
 * 原生 JavaScript
 * CSS (3) 、Sass
 * Koa2 、axios
 * PWA：Manifest、Service Worker 、cacheStorage
 
-##### 已实现的功能
+**已实现的功能**
 
 后端部分: 
 
