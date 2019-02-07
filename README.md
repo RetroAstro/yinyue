@@ -1,4 +1,4 @@
-> #### 音悦 ~ 一款 PWA 版的在线音乐 APP
+> ## 音悦 ~ 一款 PWA 版的在线音乐 APP
 
 **使用**
 
@@ -12,7 +12,7 @@ $ npm run start
 
 项目本身是适配移动端的所以在网站中打开的时候请自行切换到移动端视角查看...... 然后就是苹果手机的话请长按项目地址拷贝后用 Safari 打开,点击正下角的按钮然后将应用添加到桌面。 要说的是只有 IOS 系统升级到 11.3.0 以上才会支持 Service Worker 缓存功能, 不过没有升级添加到桌面后也能看, 应有的效果还是有的, 只是不能做到重启应用后秒开的效果。安卓手机可通过手机谷歌浏览器打开点击右上角按钮然后有添加到主屏幕的选项。
 
-##### 项目演示地址：[音悦 ~ Version Of Progressive Web App](https://cosmos-alien.com:443)
+**[音悦 ~ Version Of Progressive Web App](https://cosmos-alien.com:443)**
 
 **技术栈**
 
