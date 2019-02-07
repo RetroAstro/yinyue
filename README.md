@@ -1,4 +1,4 @@
-> ## 音悦 ~ 一款 PWA 版的在线音乐 APP
+## 音悦 ~ 一款 PWA 版的在线音乐 APP
 
 **[Version Of Progressive Web App](https://cosmos-alien.com:443)**
 
