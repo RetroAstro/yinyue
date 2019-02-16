@@ -1,4 +1,3 @@
-
 const Koa = require('koa')
 const path = require('path')
 const views = require('koa-views')
@@ -24,6 +23,4 @@ app.use(bodyParser())
 // 加载路由
 app.use(routers.routes()).use(routers.allowedMethods())
 
-app.listen(80)
-
-console.log(`server is running at port 80`)
+app.listen(3000)

@@ -197,7 +197,7 @@ class MusicPool {
                 pic: 'https://p2.music.126.net/O0kJwOEhpHfFo5V4mQVrPg==/109951163278435685.jpg',
                 name: '第三人称',
                 singer: '戚薇',
-                url: 'https://m10.music.126.net/20190106000739/e041d8cfffabfe8ab36efd00af62a3d9/ymusic/0f5f/510f/0e0e/8521958bb7fed5782f659d9d62e0a93c.mp3'
+                url: 'https://music.163.com/song/media/outer/url?id=556203044.mp3'
             }
         ];
     }
