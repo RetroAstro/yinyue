@@ -6,7 +6,7 @@
 
 **技术栈**
 
-* 原生 JavaScript
+* JavaScript
 * CSS (3) 、Sass
 * Koa2 、axios
 * PWA：Manifest、Service Worker 、cacheStorage
