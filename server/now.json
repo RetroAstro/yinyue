@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "builds": [
+    { "src": "app.js", "use": "@now/node" },
+    { "src": "services/**/*", "use": "@now/static" },
+    { "src": "utils/**/*", "use": "@now/static" }
+  ],
+  "routes": [
+    { "src": "/(.*)", "dest": "app.js" }
+  ],
+  "alias": "yinyue-api"
+}

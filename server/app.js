@@ -1,26 +1,19 @@
 const Koa = require('koa')
-const path = require('path')
-const views = require('koa-views')
-const static = require('koa-static')
+const cors = require('@koa/cors')
 const bodyParser = require('koa-bodyparser')
-const routers = require('./routers/router')()
+const TS = require('./utils/index')
 
+const ts = new TS()
 const app = new Koa()
 
-// 加载静态资源
-app.use(static(
-    path.join(__dirname, './../static')
-))
+app.use(cors())
 
-// 模板引擎渲染
-app.use(views(path.join(__dirname, './views'), {
-    map: { html: 'nunjucks' }
-}))
-
-// 处理post请求数据
 app.use(bodyParser())
 
-// 加载路由
-app.use(routers.routes()).use(routers.allowedMethods())
+app.use(async ctx => {
+  ts.receive(ctx)
+  let data = await ts.fetch()
+  ctx.response.body = data
+})
 
-app.listen(3000)
+module.exports = app.callback()

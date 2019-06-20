@@ -155,7 +155,7 @@ function audioPlayer() {
         progressRotate(ratio);
         autoRotate();
     }
-    
+
     function formatTime(time) {
         var min = Math.floor(time / 60);
         var sec = Math.floor(time % 60);
@@ -208,7 +208,7 @@ class MusicPool {
         this.musicList.push(map);
     }
     deleteMusic(key) {
-        var trash = 
+        var trash =
         this.musicList.find((map, index) => {
             if (map.mid == key) {
                 return this.musicList.splice(index, 1);
@@ -286,7 +286,7 @@ function checkOrder() {
 
 // 最后一步歌曲信息的改变
 function change(mid, name, pic, singer, url, type) {
-    if ( !judge(type, mid, name, singer) ) { return }; 
+    if ( !judge(type, mid, name, singer) ) { return };
     refresh(mid, name, pic, singer, url);
     player.play();
 }
@@ -306,18 +306,18 @@ function refresh(mid, name, pic, singer, url) {
 }
 
 /**
- * 
+ *
  * @param {*} type  判断以哪种方式对歌曲进行操作
  *  repeat: 若歌单中有该歌曲则只显示播放页不请求该歌曲
  *  lowerPlay: 请求歌曲, 添加到歌单, 播放歌曲但不显示播放页
  *  onlyList: 请求歌曲, 添加到歌单
  *  outerPlay: 请求歌曲, 添加到歌单, 播放歌曲且显示播放页
- * 
+ *
  */
 function judge(type, mid, name, singer) {
     if ( type == 'repeat' ) {
         blur.classList.add('show');
-    } 
+    }
     else if ( type == 'lowerPlay') {
         addToMusicList(mid, name, singer);
         saveMusicListToCache();
@@ -340,7 +340,7 @@ function judge(type, mid, name, singer) {
 
 // 添加到歌单
 function addToMusicList(mid, name, singer) {
-    var html = 
+    var html =
     `
     <li class="self-song">
         <div class="song-info" song_mid=${mid}>
@@ -433,7 +433,7 @@ function reqSearchData() {
     }
     var data = { keyword: keyword };
     $.ajax({
-        url: '/search',
+        url: 'https://yinyue-api.now.sh/search',
         method: 'POST',
         data: data
     }).then(res => {
@@ -448,7 +448,7 @@ function renderSinger(res) {
         var { singer_mid, name, pic } = data;
         var li = document.createElement('li');
         li.classList.add('singer-li');
-        var html = 
+        var html =
         `
         <div class="singer-info">
             <div class="singer-pic">
@@ -476,7 +476,7 @@ function renderSong(res) {
         var { song_mid, name, singer } = song;
         var li = document.createElement('li');
         li.classList.add('song');
-        var html = 
+        var html =
         `
         <div class="song-info" song_mid=${song_mid}>
             <p class="song-name">${name}</p>
@@ -515,7 +515,7 @@ function reqMusicData(song_mid, type = 'outerPlay') {
         song_mid: song_mid
     }
     $.ajax({
-        url: '/getMusicInfo',
+        url: 'https://yinyue-api.now.sh/getMusicInfo',
         method: 'POST',
         data: data
     }).then((res) => {
@@ -551,7 +551,7 @@ function reqSingerData(singer_mid) {
         singer_mid: singer_mid
     }
     $.ajax({
-        url: '/getSingerSongs',
+        url: 'https://yinyue-api.now.sh/getSingerSongs',
         method: 'POST',
         data: data
     }).then((res) => {
@@ -572,7 +572,7 @@ function handleSinger(res, singer_mid) {
         var { singer_name, song_mid, song_name } = list;
         var li = document.createElement('li');
         li.classList.add('singer-song');
-        var html = 
+        var html =
         `
         <div class="song-info" song_mid=${song_mid}>
             <p class="song-name">${song_name}</p>
@@ -649,7 +649,7 @@ function markPageMid(e) {
     }
 }
 
-// Service Worker Register 
+// Service Worker Register
 if ( 'serviceWorker' in navigator ) {
     navigator.serviceWorker.register('/service_worker.js')
     .then( registration => {
@@ -722,6 +722,6 @@ getMusicListFromCache()
         }
     }
 })
-.catch( err => { 
+.catch( err => {
     console.log(err);
 })

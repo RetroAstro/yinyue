@@ -1,7 +1,7 @@
 {
     "name": "音悦",
     "short_name": "音悦",
-    "start_url": "https://cosmos-alien.com",
+    "start_url": "https://yinyue.now.sh",
     "display": "standalone",
     "background_color": "#b2dedd",
     "description": "音悦 ~ 一款PWA版的在线音乐播放器",
