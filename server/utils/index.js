@@ -11,13 +11,13 @@ class TransferStation {
   receive(ctx) {
     this.type = url.parse(ctx.request.url).pathname.substr(1)
     this.data = { keyword: [], song_mid: [], singer_mid: [] }
-    var res_data = ctx.request.body
+    let res_data = ctx.request.body
     this.get_receive_mission(this)[this.type](res_data)
   }
   // 获取, 发送, 返回数据
   fetch() {
     if (this.type) {
-      var params = this.get_fetch_mission(this)[this.type]()
+      let params = this.get_fetch_mission(this)[this.type]()
       return Axios(this.type, params)
     }
   }

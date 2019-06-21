@@ -1,4 +1,3 @@
-
 var cacheMaps = {
     cache_static: 'static_online',
     cache_image: 'image_online',
@@ -8,7 +7,7 @@ var cacheMaps = {
 
 // var cache_music = 'music_online';
 
-var staticFiles = 
+var staticFiles =
 [
 '/','/js/tool.js','/js/index.js','/css/index.css',
 '/img/avatar.jpg','/img/play.png','/img/list.png','/img/logo.svg','/img/active.png',
@@ -95,4 +94,3 @@ function firstCache(request, cacheName) {
         })
     })
 }
-
