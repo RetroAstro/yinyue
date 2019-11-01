@@ -45,7 +45,13 @@ self.addEventListener('activate', event => {
 // 缓存策略 -- 在IOS 11.3.1 上有bug, 缓存后的音乐不能播放, 歌手图片不显示 --
 self.addEventListener('fetch', event => {
     // 缓存音乐
-    if ( /dl.stream.qqmusic.qq.com/.test(event.request.url) ) {
+    if (
+      /dl.stream.qqmusic.qq.com/.test(event.request.url)
+      ||
+      /music.163.com/.test(event.request.url)
+      ||
+      /m10.music.126.net/.test(event.request.url)
+    ) {
         // var request = event.request;
         // event.respondWith(firstCache(request, cache_music));
     }
